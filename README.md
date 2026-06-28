@@ -178,23 +178,23 @@ Cache --> API[CLI / REST API / Dashboard]
 
 ```
 Documents
-  │
-  ▼
+   │
+   ▼
 Tokenization
-  │
-  ▼
+   │
+   ▼
 Normalization
-  │
-  ▼
+   │
+   ▼
 Forward Index
-  │
-  ▼
+   │
+   ▼
 Positional Inverted Index
-  │
-  ▼
+   │
+   ▼
 Trie
-  │
-  ▼
+   │
+   ▼
 Ready for Search
 ```
 
