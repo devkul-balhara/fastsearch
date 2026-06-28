@@ -1,4 +1,4 @@
-# FastSearch
+# FastSearch — In-Memory Search Engine (C++17)
 
 <p align="center">
 
@@ -6,37 +6,42 @@
 
 </p>
 
-<p align="center">
-
-</p>
-
 ---
 
 # Overview
 
-FastSearch is an educational Information Retrieval engine built completely from scratch in **modern C++17**.
+FastSearch is an educational search engine built completely from scratch in **modern C++17** to demonstrate the core algorithms used in Information Retrieval (IR) systems.
 
-The goal of the project is to demonstrate how modern search engines work internally by implementing the core indexing, retrieval and ranking algorithms instead of relying on existing search libraries.
+Instead of relying on existing search libraries, the project implements indexing, ranking, query processing, caching and benchmarking from first principles while remaining lightweight and dependency-free.
 
-The engine supports positional indexing, BM25 ranking, Boolean retrieval, phrase and proximity search, autocomplete, spell correction, REST APIs, performance benchmarking and an interactive web dashboard.
+The engine supports positional indexing, BM25 ranking, Boolean retrieval, phrase search, proximity search, autocomplete, spell correction, REST APIs, performance benchmarking and an interactive web dashboard.
+
+---
+
+## Highlights
+
+- Implements core Information Retrieval algorithms from scratch.
+- Supports BM25 ranking, Boolean, phrase and proximity search.
+- Includes REST APIs, automated tests and an interactive web dashboard.
+- Built in modern C++17 with minimal external dependencies.
 
 ---
 
 # Why FastSearch?
 
-Modern search systems are far more than simple string matching.
+Modern search systems are significantly more sophisticated than simple string matching.
 
 FastSearch explores the complete retrieval pipeline including:
 
-* Efficient document indexing
-* Query parsing and optimization
-* Ranking using BM25
-* Positional retrieval
-* Low-latency search
-* Query caching
-* Performance benchmarking
+- Efficient document indexing
+- Query parsing and optimization
+- BM25 ranking
+- Positional retrieval
+- Low-latency search
+- Query caching
+- Performance benchmarking
 
-The project is intentionally lightweight, dependency-free (except the standard library) and focused on implementing the underlying algorithms from scratch.
+The project focuses on implementing the underlying algorithms rather than relying on third-party search libraries.
 
 ---
 
@@ -44,17 +49,17 @@ The project is intentionally lightweight, dependency-free (except the standard l
 
 ## Information Retrieval
 
-* Forward Index
-* Positional Inverted Index
-* BM25 Ranking
-* Top-K Retrieval using Min Heap
+- Forward Index
+- Positional Inverted Index
+- BM25 Ranking
+- Top-K Retrieval using Min Heap
 
 ## Search
 
-* Keyword Search
-* Boolean Search
-* Phrase Search
-* Proximity Search
+- Keyword Search
+- Boolean Search
+- Phrase Search
+- Proximity Search
 
 Example queries
 
@@ -74,12 +79,12 @@ machine NEAR/2 learning
 
 ## Query Processing
 
-* Query Parser
-* Text Normalization
-* Stop-word Handling
-* Posting List Ordering
-* Phrase Verification
-* Proximity Verification
+- Query Parser
+- Text Normalization
+- Stop-word Handling
+- Posting List Ordering
+- Phrase Verification
+- Proximity Verification
 
 ---
 
@@ -87,9 +92,9 @@ machine NEAR/2 learning
 
 Trie-based autocomplete supporting
 
-* Prefix search
-* Frequency ranking
-* Fast suggestions
+- Prefix search
+- Frequency ranking
+- Fast suggestions
 
 ---
 
@@ -101,7 +106,9 @@ Example
 
 ```text
 machien
+
 ↓
+
 machine
 ```
 
@@ -109,20 +116,20 @@ machine
 
 ## Performance
 
-* LRU Query Cache
-* Metrics Collector
-* Benchmark Suite
-* Search Throughput Measurement
-* Latency Statistics
-* P95 / P99 Reporting
+- LRU Query Cache
+- Metrics Collector
+- Benchmark Suite
+- Search Throughput Measurement
+- Latency Statistics
+- P95 / P99 Reporting
 
 ---
 
 ## Interfaces
 
-* Command Line Interface
-* REST API
-* Interactive Web Dashboard
+- Command Line Interface
+- REST API
+- Interactive Web Dashboard
 
 ---
 
@@ -160,17 +167,17 @@ Cache --> API[CLI / REST API / Dashboard]
 
 # Components
 
-| Component        | Responsibility                                                 |
-| ---------------- | -------------------------------------------------------------- |
-| ForwardIndex     | Stores original documents for retrieval and snippet generation |
-| PositionalIndex  | Stores positional postings for phrase and proximity search     |
-| QueryParser      | Parses and validates user queries                              |
-| BM25Ranker       | Scores candidate documents                                     |
-| Trie             | Prefix autocomplete                                            |
-| SpellCorrector   | Levenshtein-based correction                                   |
-| LRUCache         | Query result caching                                           |
-| MetricsCollector | Latency and cache statistics                                   |
-| BenchmarkRunner  | Performance benchmarking                                       |
+| Component | Responsibility |
+|------------|----------------|
+| ForwardIndex | Stores original documents for retrieval and snippet generation |
+| PositionalIndex | Stores positional postings for phrase and proximity search |
+| QueryParser | Parses and validates user queries |
+| BM25Ranker | Scores candidate documents |
+| Trie | Prefix autocomplete |
+| SpellCorrector | Levenshtein-based correction |
+| LRUCache | Query result caching |
+| MetricsCollector | Latency and cache statistics |
+| BenchmarkRunner | Performance benchmarking |
 
 ---
 
@@ -178,23 +185,23 @@ Cache --> API[CLI / REST API / Dashboard]
 
 ```
 Documents
-   │
-   ▼
+      │
+      ▼
 Tokenization
-   │
-   ▼
+      │
+      ▼
 Normalization
-   │
-   ▼
+      │
+      ▼
 Forward Index
-   │
-   ▼
+      │
+      ▼
 Positional Inverted Index
-   │
-   ▼
+      │
+      ▼
 Trie
-   │
-   ▼
+      │
+      ▼
 Ready for Search
 ```
 
@@ -204,26 +211,26 @@ Ready for Search
 
 ```
 User Query
-   │
-   ▼
+      │
+      ▼
 Query Parser
-   │ 
-   ▼
+      │
+      ▼
 Posting Retrieval
-   │ 
-   ▼
+      │
+      ▼
 Boolean / Phrase / Proximity Evaluation
-   │ 
-   ▼
+      │
+      ▼
 BM25 Ranking
-   │ 
-   ▼
+      │
+      ▼
 Top-K Heap
-   │ 
-   ▼
+      │
+      ▼
 LRU Cache
-   │ 
-   ▼
+      │
+      ▼
 Search Results
 ```
 
@@ -231,13 +238,13 @@ Search Results
 
 # REST API
 
-| Method | Endpoint                | Description                                |
-| ------ | ----------------------- | ------------------------------------------ |
-| GET    | `/search?q=`            | Returns ranked search results              |
-| GET    | `/autocomplete?prefix=` | Returns autocomplete suggestions           |
-| POST   | `/upload`               | Uploads a new in-memory document           |
-| POST   | `/rebuild`              | Rebuilds the index from the data directory |
-| GET    | `/metrics`              | Returns engine statistics                  |
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/search?q=` | Returns ranked search results |
+| GET | `/autocomplete?prefix=` | Returns autocomplete suggestions |
+| POST | `/upload` | Uploads a new in-memory document |
+| POST | `/rebuild` | Rebuilds the index from the data directory |
+| GET | `/metrics` | Returns engine statistics |
 
 ---
 
@@ -251,7 +258,6 @@ FastSearch
 │   ├── corpus/
 │   ├── plots/
 │   └── benchmark.cpp
-│
 ├── data/                   Sample documents
 ├── frontend/               HTML/CSS/JS dashboard
 ├── include/                Public headers
@@ -267,24 +273,33 @@ FastSearch
 
 # Performance Benchmarks
 
-The benchmark suite evaluates the engine using
+The benchmark suite evaluates the engine using:
 
-* ~500 technical paragraphs
-* 80 representative search queries
-* Dataset sizes of **500**, **1000**, **2500** and **5000** documents
+- ~500 technical paragraphs
+- 80 representative search queries
+- Dataset sizes of **500**, **1000**, **2500** and **5000** documents
 
-Metrics collected include
+Metrics collected include:
 
-* Indexing latency
-* Cold search latency
-* Warm search latency
-* Autocomplete latency
-* Spell correction latency
-* Search throughput (queries/second)
+- Indexing latency
+- Cold search latency
+- Warm search latency
+- Autocomplete latency
+- Spell correction latency
+- Search throughput (queries/second)
 
 Cold search invalidates the LRU query cache before every query.
 
 Warm search executes repeated queries with caching enabled.
+
+## Sample Benchmark Results
+
+| Metric | 500 Docs | 1000 Docs | 2500 Docs | 5000 Docs |
+|--------|---------:|----------:|----------:|----------:|
+| Indexing | 43.3 ms | 86.4 ms | 233.5 ms | 494.3 ms |
+| Cold Search | 0.246 ms | 0.356 ms | 0.657 ms | 1.171 ms |
+| Warm Search | 0.006 ms | 0.007 ms | 0.007 ms | 0.007 ms |
+| Throughput | 65.4K qps | 49.3K qps | 31.1K qps | 19.0K qps |
 
 ---
 
@@ -314,21 +329,21 @@ Warm search executes repeated queries with caching enabled.
 
 # Complexity
 
-| Operation          | Complexity                  |
-| ------------------ | --------------------------- |
-| Indexing           | **O(T)**                    |
-| Term Lookup        | **O(1)** average            |
-| Boolean Search     | **O(sum of posting lists)** |
-| Phrase Search      | **O(candidate positions)**  |
-| BM25 Top-K Ranking | **O(n log k)**              |
-| Trie Autocomplete  | **O(prefix + matches)**     |
-| LRU Cache          | **O(1)** average            |
+| Operation | Complexity |
+|------------|------------|
+| Indexing | **O(T)** |
+| Term Lookup | **O(1)** average |
+| Boolean Search | **O(sum of posting lists)** |
+| Phrase Search | **O(candidate positions)** |
+| BM25 Top-K Ranking | **O(n log k)** |
+| Autocomplete | **O(prefix + matches)** |
+| LRU Cache | **O(1)** average |
 
 ---
 
 # Design Trade-offs
 
-The engine stores the original document in a forward index to enable snippet generation and result presentation.
+The engine stores original documents in a forward index to support snippet generation and result presentation.
 
 A positional inverted index consumes more memory than a frequency-only index but enables efficient phrase and proximity search.
 
@@ -340,9 +355,7 @@ The system is intentionally in-memory to prioritize low-latency retrieval and im
 
 ```bash
 cmake -S . -B build
-
 cmake --build build
-
 ctest --test-dir build --output-on-failure
 ```
 
@@ -368,7 +381,7 @@ Benchmark Suite
 ./build/fastsearch_benchmark
 ```
 
-Open the dashboard
+Dashboard
 
 ```
 http://localhost:8080
@@ -378,34 +391,40 @@ http://localhost:8080
 
 # Tech Stack
 
-| Category      | Technology                         |
-| ------------- | ---------------------------------- |
-| Language      | C++17                              |
-| Build System  | CMake                              |
-| Backend       | Custom HTTP Server (POSIX Sockets) |
-| Frontend      | HTML, CSS, JavaScript              |
-| Testing       | CTest                              |
-| Benchmarking  | Custom Benchmark Framework         |
-| Visualization | Python (Matplotlib, Pandas)        |
+| Category | Technology |
+|-----------|------------|
+| Language | C++17 |
+| Build System | CMake |
+| Networking | POSIX Sockets |
+| Frontend | HTML, CSS, JavaScript |
+| Testing | CTest |
+| Benchmarking | Custom Benchmark Framework |
+| Visualization | Python (Matplotlib, Pandas) |
 
 ---
 
 # Design Decisions
 
-* BM25 replaces TF-IDF for improved document ranking.
-* Positional indexing enables efficient phrase and proximity retrieval.
-* Posting lists are reordered before intersection to reduce work during Boolean evaluation.
-* Query results are cached using an LRU cache to accelerate repeated searches.
-* A forward index stores original document text for snippet generation.
-* The engine is fully in-memory to simplify the architecture and minimize query latency.
+- BM25 replaces TF-IDF for improved document ranking.
+- Positional indexing enables efficient phrase and proximity retrieval.
+- Posting lists are reordered before intersection to reduce Boolean evaluation cost.
+- Query results are cached using an LRU cache to accelerate repeated searches.
+- A forward index stores original document text for snippet generation.
+- The engine is fully in-memory to simplify the architecture and minimize query latency.
 
 ---
 
 # Future Improvements
 
-* Incremental indexing
-* Persistent storage
-* Compressed posting lists
-* Parallel indexing
-* Parallel query execution
-* Distributed search
+- Incremental indexing
+- Persistent storage
+- Compressed posting lists
+- Parallel indexing
+- Parallel query execution
+- Distributed search
+
+---
+
+# License
+
+This project is intended for educational and learning purposes.
