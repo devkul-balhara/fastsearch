@@ -106,9 +106,7 @@ Example
 
 ```text
 machien
-
 ↓
-
 machine
 ```
 
@@ -185,23 +183,23 @@ Cache --> API[CLI / REST API / Dashboard]
 
 ```
 Documents
-      │
-      ▼
+    │
+    ▼
 Tokenization
-      │
-      ▼
+    │
+    ▼
 Normalization
-      │
-      ▼
+    │
+    ▼
 Forward Index
-      │
-      ▼
+    │
+    ▼
 Positional Inverted Index
-      │
-      ▼
+    │
+    ▼
 Trie
-      │
-      ▼
+    │
+    ▼
 Ready for Search
 ```
 
@@ -211,26 +209,26 @@ Ready for Search
 
 ```
 User Query
-      │
-      ▼
+    │
+    ▼
 Query Parser
-      │
-      ▼
+    │
+    ▼
 Posting Retrieval
-      │
-      ▼
+    │
+    ▼
 Boolean / Phrase / Proximity Evaluation
-      │
-      ▼
+    │
+    ▼
 BM25 Ranking
-      │
-      ▼
+    │
+    ▼
 Top-K Heap
-      │
-      ▼
+    │
+    ▼
 LRU Cache
-      │
-      ▼
+    │
+    ▼
 Search Results
 ```
 
