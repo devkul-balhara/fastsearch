@@ -10,11 +10,9 @@
 
 # Overview
 
-FastSearch is an educational search engine built completely from scratch in **modern C++17** to demonstrate the core algorithms used in Information Retrieval (IR) systems.
-
-Instead of relying on existing search libraries, the project implements indexing, ranking, query processing, caching and benchmarking from first principles while remaining lightweight and dependency-free.
-
-The engine supports positional indexing, BM25 ranking, Boolean retrieval, phrase search, proximity search, autocomplete, spell correction, REST APIs, performance benchmarking and an interactive web dashboard.
+- FastSearch is an educational search engine built completely from scratch in **modern C++17** to demonstrate the core algorithms used in Information Retrieval (IR) systems.
+- Instead of relying on existing search libraries, the project implements indexing, ranking, query processing, caching and benchmarking from first principles while remaining lightweight and dependency-free.
+- The project supports positional indexing, BM25 ranking, Boolean retrieval, phrase search, proximity search, autocomplete, spell correction, REST APIs, performance benchmarking and an interactive web dashboard.
 
 ---
 
@@ -273,7 +271,7 @@ FastSearch
 
 The benchmark suite evaluates the engine using:
 
-- ~500 technical paragraphs
+- 544 synthetic technical paragraphs
 - 80 representative search queries
 - Dataset sizes of **500**, **1000**, **2500** and **5000** documents
 
@@ -341,11 +339,9 @@ Warm search executes repeated queries with caching enabled.
 
 # Design Trade-offs
 
-The engine stores original documents in a forward index to support snippet generation and result presentation.
-
-A positional inverted index consumes more memory than a frequency-only index but enables efficient phrase and proximity search.
-
-The system is intentionally in-memory to prioritize low-latency retrieval and implementation clarity.
+- A forward index stores original documents to enable snippet generation and result presentation.
+- A positional inverted index consumes more memory than a frequency-only index but enables efficient phrase and proximity search.
+- The engine is intentionally in-memory to prioritize low-latency retrieval and architectural simplicity.
 
 ---
 
