@@ -1,11 +1,81 @@
-# binaries
-fastsearch
-main
-*.out
-a.out
+# =========================
+# Build
+# =========================
 
-# macOS
+build/
+
+cmake-build-*/
+
+CMakeFiles/
+
+CMakeCache.txt
+
+Makefile
+
+cmake_install.cmake
+
+CTestTestfile.cmake
+
+Testing/
+
+compile_commands.json
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+
+.idea/
+
+*.swp
+
+*.swo
+
 .DS_Store
 
-# VS Code
-.vscode/
+# =========================
+# Python
+# =========================
+
+.venv/
+
+__pycache__/
+
+*.pyc
+
+# =========================
+# Generated Benchmarks
+# =========================
+
+benchmark_results.csv
+
+benchmark_results.json
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# macOS
+# =========================
+
+.AppleDouble
+
+.LSOverride
+
+# =========================
+# Executables
+# =========================
+
+fastsearch_cli
+
+fastsearch_api
+
+fastsearch_benchmark
+
+fastsearch_tests
+
+*.exe
