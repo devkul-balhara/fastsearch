@@ -72,6 +72,7 @@ machine AND ranking
 database OR indexing
 
 search NEAR/4 ranking
+```
 
 ---
 
