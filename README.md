@@ -35,7 +35,7 @@ FastSearch explores the complete retrieval pipeline including:
 - Query parsing and optimization
 - BM25 ranking
 - Positional retrieval
-- Low-latency search
+- Low-latency search and context-aware result presentation
 - Query caching
 - Performance benchmarking
 
@@ -58,20 +58,20 @@ The project focuses on implementing the underlying algorithms rather than relyin
 - Boolean Search
 - Phrase Search
 - Proximity Search
+- Context-Aware Snippet Generation with Intelligent Highlighting
 
 Example queries
 
 ```text
 machine learning
 
-"machine learning"
+"search engine"
 
-machine AND backend
+machine AND ranking
 
-machine OR operating
+database OR indexing
 
-machine NEAR/2 learning
-```
+search NEAR/4 ranking
 
 ---
 
@@ -165,7 +165,7 @@ Cache --> API[CLI / REST API / Dashboard]
 
 | Component | Responsibility |
 |------------|----------------|
-| ForwardIndex | Stores original documents for retrieval and snippet generation |
+| ForwardIndex | Stores original documents for context-aware snippet generation and result presentation |
 | PositionalIndex | Stores positional postings for phrase and proximity search |
 | QueryParser | Parses and validates user queries |
 | BM25Ranker | Scores candidate documents |
