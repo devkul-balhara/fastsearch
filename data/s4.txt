@@ -1,0 +1,16 @@
+Distributed systems allow multiple computers to cooperate while appearing as one logical system. 
+Modern backend engineering relies on distributed systems for scalability, fault tolerance, load balancing, caching, monitoring, and high availability. 
+Services communicate through APIs, asynchronous messaging, and reliable networking protocols.
+Search engines separate indexing, ranking, caching, query processing, and monitoring into independent services. 
+Information retrieval systems process search requests while distributed systems coordinate data replication, fault recovery, and resource allocation. 
+Machine learning services may run alongside search infrastructure to improve ranking and recommendation quality.
+Operating systems provide scheduling, networking, process isolation, and memory management for backend applications. 
+Engineers continuously monitor latency, throughput, cache hit rate, and benchmark results to optimize production systems and improve user experience.
+A Distributed System is a collection of independent computers (often called nodes) that work together over a network to achieve a common goal. 
+To the end user, the entire network behaves like a single, incredibly powerful computer.
+Instead of relying on one massive, expensive machine to do all the heavy lifting, a distributed system breaks a massive workload into smaller pieces and spreads them across multiple machines.
+Scalability: When a system experiences an influx of traffic, it can be scaled horizontally. 
+Instead of buying a faster, more expensive server (vertical scaling), engineers can simply plug more standard computers into the network to handle the load.
+Fault Tolerance: If a single computer crashes in a centralized system, the entire application goes offline. 
+In a distributed network, if one node fails, others seamlessly pick up the slack, ensuring the service achieves high availability (uptime).
+Low Latency: By placing servers in data centers all over the world, data can be served to users from a physical location closer to them, reducing the time it takes for information to travel across the web.

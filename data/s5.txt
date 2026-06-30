@@ -1,0 +1,19 @@
+Information retrieval focuses on finding relevant information from large collections of documents. 
+Modern search engines combine forward indexes, positional inverted indexes, BM25 ranking, Boolean search, phrase search, proximity search, autocomplete, spell correction, and query optimization to provide accurate search results.
+FastSearch is an in-memory search engine implemented in modern C++. 
+The project demonstrates BM25 ranking, trie based autocomplete, positional indexes, Boolean queries, proximity search, spell correction using Levenshtein distance, LRU query caching, REST APIs, benchmarking, and a lightweight web interface.
+Search engines are widely used in software engineering, operating systems research, machine learning, distributed systems, databases, and space exploration. 
+Engineers search technical documentation, benchmark reports, architecture diagrams, research papers, and API references every day. 
+Efficient information retrieval reduces latency, improves productivity, and enables fast access to relevant knowledge.
+Information Retrieval (IR) is the science and technology behind finding relevant information within massive collections of unstructured data, usually text. 
+When you type a misspelled phrase into Google, search for an old email in Gmail, or look up a product on Amazon, you are relying on an IR system.
+Unlike a relational database search—which looks for exact matches like an ID number—an IR system acts as a smart filter. 
+It interprets a user's intent, scans millions of documents, and surfaces the items that are most relevant to what the user actually wants.
+Inverted Indexing: Before a search even happens, the system parses millions of documents, strips out common filler words (like "the" or "is"), breaks words down to their base forms (e.g., turning "running" into "run"), and creates a giant map. 
+This "inverted index" lists every unique word and points directly to the exact documents where that word appears—acting like the index at the back of a massive textbook.
+The Multi-Stage Pipeline: When a user inputs a query, the system uses the inverted index to quickly grab a broad pool of thousands of potential documents (first-stage retrieval). 
+It then passes these candidates through advanced machine learning algorithms (re-rankers) that evaluate context, synonyms, and user history to narrow the results down to the best dozen links.
+Traditionally, IR systems relied heavily on literal keyword matching using formulas like TF-IDF (Term Frequency-Inverse Document Frequency), which weights words based on how rare and important they are in a text.
+Today, the field has evolved into semantic search. 
+Using artificial intelligence, documents and queries are converted into complex mathematical vectors (embeddings) that capture the underlying meaning of phrases. 
+This allows modern IR systems to understand that a query for "automobile repairs" should return documents about "fixing a car," even if the two texts don't share a single word in common.

@@ -1,0 +1,18 @@
+Machine learning enables computer systems to improve performance by learning from data rather than following only manually written rules. 
+Artificial intelligence combines machine learning, natural language processing, computer vision, and reasoning algorithms to solve complex problems across many industries.
+Search engines increasingly use machine learning to improve ranking, autocomplete, spell correction, and query understanding. 
+Information retrieval remains the foundation of every search engine because efficient indexing and document retrieval must occur before advanced ranking techniques are applied.
+Researchers train machine learning models using large datasets collected from healthcare, finance, manufacturing, transportation, and space exploration. 
+Modern backend systems process these datasets using distributed systems, cloud computing, and scalable databases. 
+Operating systems manage hardware resources while networking enables communication between services.
+Reliable software engineering, benchmarking, monitoring, and automated testing ensure that machine learning applications remain accurate, scalable, and maintainable in production environments.
+At its core, Machine Learning (ML) is a branch of artificial intelligence that focuses on building systems that learn from data. 
+Instead of being explicitly programmed with rigid rules for every scenario, a machine learning model is trained on vast amounts of information, allowing it to recognize complex patterns and make decisions or predictions on its own.
+The process mirrors human learning in many ways: the more high-quality data the system processes, the more accurate and efficient it becomes over time.
+This technology is no longer just a futuristic concept; it quietly runs much of the modern world. Every time you see a personalized movie recommendation, use a voice assistant, or rely on a spam filter, machine learning is working behind the scenes.
+Supervised Learning: The model is trained on labeled data (like a teacher giving a student flashcards with the questions and answers). 
+It learns the relationship between the inputs and the correct outputs to predict outcomes on new, unseen data.
+Unsupervised Learning: The model is given unlabeled data and must find hidden structures or groupings on its own (like sorting a mixed deck of cards without instructions). 
+It is highly effective for customer segmentation and anomaly detection.
+Reinforcement Learning: The model learns through trial and error by interacting with an environment, receiving "rewards" for correct actions and "penalties" for wrong ones (similar to training a dog with treats). 
+This powers autonomous vehicles and advanced gaming systems.
