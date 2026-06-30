@@ -356,6 +356,21 @@ ctest --test-dir build --output-on-failure
 
 ---
 
+## Generate Benchmark Graphs (Optional)
+
+The benchmark visualization script uses Python and is only required if you want to regenerate the benchmark plots.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+./build/fastsearch_benchmark
+python scripts/plot_benchmarks.py
+```
+
+---
+
 # Run
 
 CLI
